@@ -21,8 +21,8 @@ public class DemoController {
     public UserInfo getOne(
             @PathVariable("id") Long id){
         log.info("输出日志");
-        List<UserInfo> list = userService.list();
-        return list.get(0);
+        UserInfo userServiceById = userService.getById(id);
+        return userServiceById;
     }
 
 }

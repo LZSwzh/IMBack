@@ -1,5 +1,5 @@
 server:
-  port: 9000
+  port: 8080
 spring:
   application:
     name: gateway-service # 必须，用于拼接远程的yml名
@@ -14,8 +14,12 @@ spring:
         file-extension: yaml
         enabled: true
         refresh-enabled: true
-    gateway: #开启网关配置，路由规则写道nacos去了
-      discovery:
-        locator:
-          enabled: true # 开启nacos发现并可以自动路由
+lb:
+  enabled: true
+  version: wangzh
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true # 自动路由，相当于每个服务都添加了一个uri: lb://<service-name>、predicates.Path=/<service-name>/**、filters.StripPrefix=1
+#          lower-case-service-id: true # 如果服务名配置成大写的，可以通过这个属性通过小写使用
 

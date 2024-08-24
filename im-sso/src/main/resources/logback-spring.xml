@@ -34,7 +34,7 @@
     </appender>
 
     <!-- 日志记录器,将上述定义的两种日志引入，并定义记录哪些级别的日志  -->
-    <logger name="com.cl.im" level="DEBUG">
+    <logger name="com.cl.im" level="TRACE">
         <appender-ref ref="CONSOLE" />
 <!--        <appender-ref ref="FILE" />-->
     </logger>
