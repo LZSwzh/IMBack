@@ -1,4 +1,4 @@
-package com.im.sso.domain.entity;
+package com.cl.im.sso.domain.entity;
 
 import lombok.Data;
 import com.baomidou.mybatisplus.annotation.IdType;

@@ -1,3 +1,5 @@
+#server:
+#  port: 8081
 spring:
   application:
     name: sso-service # 必须，用于拼接远程的yml名
@@ -6,6 +8,8 @@ spring:
       discovery: # 服务发现端口
         group: DEV_GROUP
         server-addr: localhost:8848
+        metadata:
+          version: wangzh
       config: # 服务配置端口
         server-addr: localhost:8848
         group: DEV_GROUP

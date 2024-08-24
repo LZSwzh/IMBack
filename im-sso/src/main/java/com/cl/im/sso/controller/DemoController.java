@@ -1,7 +1,7 @@
-package com.im.sso.controller;
+package com.cl.im.sso.controller;
 
-import com.im.sso.domain.entity.UserInfo;
-import com.im.sso.service.UserService;
+import com.cl.im.sso.domain.entity.UserInfo;
+import com.cl.im.sso.service.UserService;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

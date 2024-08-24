@@ -3,6 +3,7 @@ package com.cl.im.Exceptions;
 import com.cl.im.Exceptions.BusinessException;
 import com.cl.im.entity.R;
 import com.cl.im.enums.ResEnums;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.ConversionNotSupportedException;
 import org.springframework.beans.TypeMismatchException;
@@ -55,8 +56,7 @@ public class ComnExceptionHandler {
      * Controller上一层相关异常
      */
     @ExceptionHandler({
-            NoHandlerFoundException.class,
-            HttpRequestMethodNotSupportedException.class,
+            HttpRequestMethodNotSupportedException.class,//NoHandlerFoundException.class,
             HttpMediaTypeNotSupportedException.class,
              MissingPathVariableException.class,
             MissingServletRequestParameterException.class,

@@ -12,6 +12,7 @@
   <modules>
     <module>im-sso</module>
     <module>im-comn</module>
+      <module>im-gateway</module>
   </modules>
 
   <parent>
